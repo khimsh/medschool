@@ -78,15 +78,25 @@ li {
   .main-nav__btn:link, .main-nav__btn:visited {
     font-size: 1.6rem;
     letter-spacing: .1rem;
+    color: #000000;
     padding: .4rem .6rem .4rem 0rem;
     display: block;
-    border-bottom: 1px solid black;
-    margin-bottom: .5rem; }
+    border-bottom: 1px solid currentColor;
+    margin-bottom: 1rem;
+    -webkit-transition: color .3s;
+    transition: color .3s; }
+  .main-nav__btn:hover, .main-nav__btn:active {
+    color: #ffffff; }
   .main-nav__link:link, .main-nav__link:visited {
     font-family: "Arial GEO", sans-serif;
     font-size: 1.4rem;
+    color: #000000;
     padding: .4rem .6rem .4rem 0rem;
-    display: inline-block; }
+    display: inline-block;
+    -webkit-transition: color .3s;
+    transition: color .3s; }
+  .main-nav__link:hover, .main-nav__link:active {
+    color: #ffffff; }
 
 .sub-menu {
   height: 0;
@@ -98,10 +108,12 @@ li {
   .sub-menu.open {
     opacity: 1;
     height: auto; }
+  .sub-menu .main-nav__item:last-child {
+    margin-bottom: 1.2rem; }
 
 body {
   display: grid;
-  grid-template-columns: 25rem auto; }
+  grid-template-columns: 28rem auto; }
 
 .main {
   grid-column: 2 / 3; }

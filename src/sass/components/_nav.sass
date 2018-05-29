@@ -12,18 +12,31 @@
     &__btn:visited
         font-size: 1.6rem
         letter-spacing: .1rem
+        color: #000000
         padding: .4rem .6rem .4rem 0rem
         display: block
 
-        border-bottom: 1px solid black
-        margin-bottom: .5rem
+        border-bottom: 1px solid currentColor
+        margin-bottom: 1rem
+
+        transition: color .3s
+
+    &__btn:hover,
+    &__btn:active,
+        color: #ffffff
 
     &__link:link,
     &__link:visited
         font-family: $font-arial
         font-size: 1.4rem
+        color: #000000
         padding: .4rem .6rem .4rem 0rem
         display: inline-block
+        transition: color .3s
+
+    &__link:hover,
+    &__link:active
+        color: #ffffff
 
 .sub-menu
     height: 0
@@ -36,3 +49,6 @@
     &.open
         opacity: 1
         height: auto
+
+    .main-nav__item:last-child
+        margin-bottom: 1.2rem
