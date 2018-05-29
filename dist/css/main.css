@@ -33,7 +33,15 @@ li {
 .article__sub-title {
   font-family: "ALK Sanet", sans-serif;
   font-size: 1.8rem;
-  margin-bottom: 1rem; }
+  letter-spacing: .1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem; }
+
+.sub-section__title {
+  font-family: "ALK Sanet", sans-serif;
+  font-size: 1.6rem;
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem; }
 
 .paragraph {
   font-family: "Arial GEO", sans-serif;
@@ -42,7 +50,8 @@ li {
   margin-bottom: .8rem; }
 
 .list {
-  margin-left: 2rem; }
+  margin-left: 2rem;
+  margin-bottom: .8rem; }
   .list__item {
     font-family: "Arial GEO", sans-serif;
     font-size: 1.6rem;
@@ -50,7 +59,7 @@ li {
     list-style: square; }
 
 .article {
-  width: 80rem;
+  width: 70rem;
   margin: 0 auto;
   padding: 1rem; }
   .article__header {
@@ -58,6 +67,9 @@ li {
   .article__title {
     font-family: "ALK Sanet", sans-serif;
     font-size: 2rem; }
+
+.sub-section {
+  margin-bottom: 2.4rem; }
 
 .main-nav {
   min-height: 100vh;
@@ -100,6 +112,8 @@ body {
 
 .header {
   background: -webkit-gradient(linear, left top, right bottom, from(#17ead9), to(#6078ea));
-  background: linear-gradient(to right bottom, #17ead9, #6078ea); }
+  background: linear-gradient(to right bottom, #17ead9, #6078ea);
+  -webkit-box-shadow: 0.5rem 0 0.5rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0.5rem 0 0.5rem rgba(0, 0, 0, 0.3); }
   .header__title {
     margin: 2rem 0; }
