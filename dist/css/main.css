@@ -68,8 +68,11 @@ li {
     font-family: "ALK Sanet", sans-serif;
     font-size: 2rem; }
 
+.section {
+  margin-bottom: 6rem; }
+
 .sub-section {
-  margin-bottom: 2.4rem; }
+  margin-bottom: 4rem; }
 
 .main-nav {
   min-height: 100vh;
