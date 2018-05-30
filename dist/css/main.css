@@ -116,6 +116,9 @@ li {
   .sub-menu .main-nav__item:last-child {
     margin-bottom: 1.2rem; }
 
+.active {
+  color: #ffffff !important; }
+
 .footer {
   width: 28rem;
   height: auto;
