@@ -9,8 +9,12 @@
     display: flex
     justify-content: center
 
-    color: #ffffff
+    @media only screen and (max-width: 1080px)
+        position: relative
+        width: 100%
+        padding: 2rem 0
 
 .copyright
     font-size: 1.2rem
     font-family: $font-ALK
+    color: $color-black

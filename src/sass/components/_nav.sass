@@ -1,3 +1,4 @@
+/* თითოეულ გვერდზე მარცხნივ მდებარე ნავიგაცია */
 .main-nav
     padding: .5rem 1rem
     font-family: $font-ALK
@@ -10,7 +11,7 @@
     &__btn:visited
         font-size: 1.6rem
         letter-spacing: .1rem
-        color: #000000
+        color: $color-black
         padding: .4rem .6rem .4rem 0rem
         display: block
 
@@ -21,35 +22,35 @@
 
     &__btn:hover,
     &__btn:active,
-        color: #ffffff
+        color: $color-white
+
+.active
+    color: $color-white !important
+
+/* საკითხების ნავიგაცია */
+.article-nav
+    height: auto
+    background-color: $color-teal
+    display: inline-block
+    padding: 2rem 3rem
+    border-radius: 4px
+
+    transition: opacity .5s
+
+    &__item
+        list-style-type: decimal
+        margin-left: .8rem
 
     &__link:link,
     &__link:visited
+        color: $color-black
         font-family: $font-arial
-        font-size: 1.4rem
-        color: #000000
+        font-size: 1.6rem
+
         padding: .4rem .6rem .4rem 0rem
         display: inline-block
+
         transition: color .3s
 
-    &__link:hover,
-    &__link:active
-        color: #ffffff
-
-.sub-menu
-    height: 0
-    opacity: 0
-    overflow: hidden
-    transition: opacity .5s
-
-    margin-left: 1rem
-
-    &.open
-        opacity: 1
-        height: auto
-
-    .main-nav__item:last-child
-        margin-bottom: 1.2rem
-
-.active
-    color: #ffffff !important
+    &__link:hover
+        color: $color-white
