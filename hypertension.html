@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/alk-sanet/css/alk-sanet.min.css">
     <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/arial-geo/css/arial-geo.min.css">
 </head>
-<body>
+<body id="body">
     <header class="header">
         <div class="header__title-box">
             <h1 class="header__title">ფარმაკოლოგია</h1>
@@ -49,12 +49,23 @@
                 <h2 class="article__title">ჰიპერტენზია</h2>
             </header>
 
-            <ul class="list">
-                <li class="list__item">შარდმდენები</li>
-                <li class="list__item">სიმპათოპლეგური საშუალებები</li>
-                <li class="list__item">პირდაპირი ვაზოდილატატორები</li>
-                <li class="list__item">ანგიოტენზინის პროდუქციის ან მისი ზემოქმედების დამთრგუნველი საშუალებები</li>
-            </ul>
+            <nav class="article-nav">
+                    <h3 class="article-nav__title">ნავიგაცია</h3>
+                    <ol class="article-nav__list" id="subMenu">
+                        <li class="article-nav__item">
+                            <a href="#sympathomimetics" class="article-nav__link scroll">შარდმდენები</a>
+                        </li>
+                        <li class="article-nav__item">
+                            <a href="#methylxanthines" class="article-nav__link scroll">სიმპათოპლეგური საშუალებები</a>
+                        </li>
+                        <li class="article-nav__item">
+                            <a href="#antimuscarinic" class="article-nav__link scroll">პირდაპირი ვაზოდილატატორები</a>
+                        </li>
+                        <li class="article-nav__item">
+                            <a href="#corticosteroids" class="article-nav__link scroll">ანგიოტენზინის პროდუქციის ან მისი ზემოქმედების დამთრგუნველი საშუალებები</a>
+                        </li>
+                    </ol>
+                </nav>
 
             <section class="section" id="diuretics">
                 <h3 class="article__sub-title">შარდმდენები</h3>
@@ -89,6 +100,8 @@
                     <li class="list__item">სპირონოლაქტონი იწვევს გინეკომასტიას</li>
                 </ul>
             </section>
+
+            <hr class="section-divider">
 
             <section class="section">
                 <h3 class="article__sub-title">ცენტრალური მოქმედების სიმპათოპლეგიური საშუალებები</h3>
@@ -127,6 +140,8 @@
                 </ul>
             </section>
 
+            <hr class="section-divider">
+
             <section class="section">
                 <h3 class="article__sub-title">ადრენორეცეპტორთა ანტაგონისტები</h3>
 
@@ -150,6 +165,8 @@
                 </section>
             </section>
 
+            <hr class="section-divider">
+
             <section class="section">
                 <h3 class="article__sub-title">&alpha;<sub>1</sub> ადრენორეცეპტორების ბლოკატორები</h3>
 
@@ -157,6 +174,8 @@
                     <strong>პრაზოზინის</strong> ანტიჰიპერტენზიული ეფექტი განპირობებულია არტერიოლებისა და ვენულების &alpha;<sub>1</sub> რეცეპტორების სელექციური ბლოკადით.  &alpha; რეცეპტორები იწვევენ როგორც რეზისტენტული ასევე მოცულობითი სისხლძარღვების გაფართოებას. არ არიან ტოქსიკურები.
                 </p>
             </section>
+
+            <hr class="section-divider">
 
             <section class="section">
                 <h3 class="article__sub-title">კალციუმის არხების ბლოკატორები</h4>
@@ -180,6 +199,8 @@
                 </p>
             </section>
 
+            <hr class="section-divider">
+
             <section class="section">
                 <h3 class="article__sub-title">აგფ ინჰიბიტორები</h3>
 
@@ -196,6 +217,8 @@
                 </p>
             </section>
 
+            <hr class="section-divider">
+
             <section class="section">
                 <h3 class="article__sub-title">ანგიოტენზინის მიმართ მგრძნობიარე რეცეპტორების ბლოკატორები</h3>
 
@@ -209,6 +232,8 @@
             </section>
         </article>
     </main>
+
+    <a href="#body" id="scroll-to-top" class="scroll-top scroll">&uarr;</a>
 
     <footer class="footer">
         <div class="copyright">&copy; 2018</div>

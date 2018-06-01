@@ -150,13 +150,13 @@ li {
   transition: opacity .5s; }
   .article-nav__item {
     list-style-type: decimal;
-    margin-left: .8rem; }
+    margin-left: .8rem;
+    font-size: 1.6rem; }
   .article-nav__link:link, .article-nav__link:visited {
     color: #000000;
     font-family: "Arial GEO", sans-serif;
-    font-size: 1.6rem;
     padding: .4rem .6rem .4rem 0rem;
-    display: inline-block;
+    display: block;
     -webkit-transition: color .3s;
     transition: color .3s; }
   .article-nav__link:hover {
