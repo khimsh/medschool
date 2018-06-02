@@ -31,6 +31,20 @@ li {
   background-color: #6078ea;
   color: #ffffff; }
 
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #000000;
+  border-bottom: 1px solid #17ead9;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+.link:hover,
+.link:active {
+  background-color: #17ead9;
+  color: #ffffff;
+  border-width: 100%; }
+
 .header__title {
   font-family: "ALK Sanet", sans-serif;
   text-align: center; }
@@ -45,7 +59,7 @@ li {
 
 .article__sub-title {
   font-family: "ALK Sanet", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   letter-spacing: .2rem;
   margin-bottom: 2.6rem;
   margin-top: 2rem; }
@@ -58,8 +72,8 @@ li {
 
 .sub-section__title {
   font-family: "ALK Sanet", sans-serif;
-  font-size: 1.6rem;
-  margin-top: 1.8rem;
+  font-size: 2.2rem;
+  letter-spacing: .2rem;
   margin-bottom: 1.8rem; }
 
 .paragraph {
@@ -68,14 +82,22 @@ li {
   line-height: 1.6;
   margin-bottom: .8rem; }
 
-.list {
-  margin-left: 2rem;
-  margin-bottom: 1rem; }
-  .list__item {
-    font-family: "Arial GEO", sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.7;
-    list-style: square; }
+strong {
+  letter-spacing: 1px;
+  color: #3e6787; }
+
+/* Utility Classes */
+.mt-l {
+  margin-top: 6rem; }
+
+.mt-md {
+  margin-top: 4rem; }
+
+.mt-sm {
+  margin-top: 2rem; }
+
+.mt-xs {
+  margin-top: 1rem; }
 
 .article {
   width: 70rem;
@@ -90,10 +112,11 @@ li {
     margin-bottom: 4rem; }
 
 .section {
+  margin-top: 5rem;
   margin-bottom: 6rem; }
 
 .sub-section {
-  margin-bottom: 4rem; }
+  margin-top: 6rem; }
 
 .scroll-top:link,
 .scroll-top:visited {
@@ -109,7 +132,8 @@ li {
           box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
   border-radius: 4px;
   -webkit-transition: all .3s;
-  transition: all .3s; }
+  transition: all .3s;
+  display: none; }
 
 .scroll-top:hover {
   -webkit-box-shadow: 0.7rem 0.7rem 0.7rem rgba(0, 0, 0, 0.3);
@@ -118,6 +142,20 @@ li {
 .scroll-top:active {
   -webkit-box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3);
           box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.3); }
+
+.list {
+  margin-left: 2rem;
+  margin-bottom: 1rem; }
+  .list__title {
+    font-size: 1.8rem;
+    font-family: "Arial GEO", sans-serif;
+    margin-bottom: 1.2rem;
+    margin-left: -2rem; }
+  .list__item {
+    font-family: "Arial GEO", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    list-style: square; }
 
 /* თითოეულ გვერდზე მარცხნივ მდებარე ნავიგაცია */
 .main-nav {
