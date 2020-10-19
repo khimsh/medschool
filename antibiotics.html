@@ -1,276 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>ფარმაკოლოგია | ანტიბიოტიკები</title>
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/main.min.css" />
 
     <!-- Font -->
-    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/alk-sanet/css/alk-sanet.min.css">
-    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/arial-geo/css/arial-geo.min.css">
-</head>
-<body id="body">
+    <link
+      rel="stylesheet"
+      href="//cdn.web-fonts.ge/fonts/alk-sanet/css/alk-sanet.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.web-fonts.ge/fonts/arial-geo/css/arial-geo.min.css"
+    />
+  </head>
+  <body id="body">
     <header class="header">
-        <div class="header__title-box">
-            <h1 class="header__title">
-                <a href="index.html">ფარმაკოლოგია</a>
-            </h1>
-        </div>
+      <div class="header__title-box">
+        <h1 class="header__title">
+          <a href="index.html">ფარმაკოლოგია</a>
+        </h1>
+      </div>
 
-        <nav class="main-nav">
-            <ul class="main-nav__list">
-                <li class="main-nav__item">
-                    <a href="asthma.html" class="main-nav__btn">ასთმა</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="antibiotics.html" class="main-nav__btn active">ანტიბიოტიკები</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="ischemia.html" class="main-nav__btn">გულის იშემიური დაავადება</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="heartfailure.html" class="main-nav__btn">გულის უკმარისობა</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="thrombosis.html" class="main-nav__btn">თრომბოზი</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="peptic.html" class="main-nav__btn">პეპტიური წყლული</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="pharmacokinetics.html" class="main-nav__btn">ფარმაკოკინეტიკა</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="diuretics.html" class="main-nav__btn">შარდმდენები</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="hypertension.html" class="main-nav__btn">ჰიპერტენზია</a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="asthma.html" class="main-nav__btn">ასთმა</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="antibiotics.html" class="main-nav__btn active"
+              >ანტიბიოტიკები</a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a href="ischemia.html" class="main-nav__btn"
+              >გულის იშემიური დაავადება</a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a href="heartfailure.html" class="main-nav__btn"
+              >გულის უკმარისობა</a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a href="thrombosis.html" class="main-nav__btn">თრომბოზი</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="peptic.html" class="main-nav__btn">პეპტიური წყლული</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="pharmacokinetics.html" class="main-nav__btn"
+              >ფარმაკოკინეტიკა</a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a href="diuretics.html" class="main-nav__btn">შარდმდენები</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="hypertension.html" class="main-nav__btn">ჰიპერტენზია</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main">
-        <article class="article">
-            <header class="article__header">
-                <h2 class="article__title">ანტიბიოტიკები</h2>
-            </header>
+      <article class="article">
+        <header class="article__header">
+          <h2 class="article__title">ანტიბიოტიკები</h2>
+        </header>
 
-            <nav class="article-nav">
-                <h3 class="article-nav__title">ნავიგაცია</h3>
-                <ol class="article-nav__list" id="subMenu">
-                    <li class="article-nav__item">
-                        <a href="#beta-lactams" class="article-nav__link scroll">ბეტა-ლაქტამური ნაერთები</a>
-                    </li>
-                    <li class="article-nav__item">
-                        <a href="#tetracycline" class="article-nav__link scroll">ტეტრაციკლინები</a>
-                    </li>
-                    <li class="article-nav__item">
-                        <a href="#macrolides" class="article-nav__link scroll">მაკროლიდები</a>
-                    </li>
-                    <li class="article-nav__item">
-                        <a href="#sulfonamides" class="article-nav__link scroll">სულფონამიდები</a>
-                    </li>
-                </ol>
-            </nav>
+        <nav class="article-nav">
+          <h3 class="article-nav__title">ნავიგაცია</h3>
+          <ol class="article-nav__list" id="subMenu">
+            <li class="article-nav__item">
+              <a href="#beta-lactams" class="article-nav__link scroll"
+                >ბეტა-ლაქტამური ნაერთები</a
+              >
+            </li>
+            <li class="article-nav__item">
+              <a href="#tetracycline" class="article-nav__link scroll"
+                >ტეტრაციკლინები</a
+              >
+            </li>
+            <li class="article-nav__item">
+              <a href="#macrolides" class="article-nav__link scroll"
+                >მაკროლიდები</a
+              >
+            </li>
+            <li class="article-nav__item">
+              <a href="#sulfonamides" class="article-nav__link scroll"
+                >სულფონამიდები</a
+              >
+            </li>
+          </ol>
+        </nav>
 
-            <section id="beta-lactams" class="section">
-                <h3 class="article__sub-title">ბეტა-ლაქტამური ნაერთები</h3>
+        <section id="beta-lactams" class="section">
+          <h3 class="article__sub-title">ბეტა-ლაქტამური ნაერთები</h3>
 
-                <p class="paragraph">
-                    ამ ჯგუფში შედის: <a href="#penicilin" class="link scroll">პენიცილინები</a>, <a href="#cephalosporin" class="link scroll">ცეფალოსპორინები</a>, <a href="#monobactam" class="link scroll">მონობაქტამები</a>, <a href="#carbapenem" class="link scroll">კარბაპენემები</a>, და <a href="#beta-lactamase-inhibitors" class="link scroll">&beta;-ლაქტამაზას ინჰიბიტორები</a>. მათ აქვთ საერთო მოქმედების მექანიზმი, ქიმიური და ფარმაკოლოგიური თვისებები და იმუნოლოგიური მახასიათებლები. 4 წევრიანი უნიკალური ლაქტამური რგოლის შემცველობის გამო მათ &beta;-ლაქტამურ ნაერთებს უწოდებენ.
-                </p>
+          <p class="paragraph">
+            ამ ჯგუფში შედის:
+            <a href="#penicilin" class="link scroll">პენიცილინები</a>,
+            <a href="#cephalosporin" class="link scroll">ცეფალოსპორინები</a>,
+            <a href="#monobactam" class="link scroll">მონობაქტამები</a>,
+            <a href="#carbapenem" class="link scroll">კარბაპენემები</a>, და
+            <a href="#beta-lactamase-inhibitors" class="link scroll"
+              >&beta;-ლაქტამაზას ინჰიბიტორები</a
+            >. მათ აქვთ საერთო მოქმედების მექანიზმი, ქიმიური და ფარმაკოლოგიური
+            თვისებები და იმუნოლოგიური მახასიათებლები. 4 წევრიანი უნიკალური
+            ლაქტამური რგოლის შემცველობის გამო მათ &beta;-ლაქტამურ ნაერთებს
+            უწოდებენ.
+          </p>
 
-                <section class="sub-section" id="penicilin">
-                    <h4 class="sub-section__title">პენიცილინები</h4>
-                    <p class="paragraph">
-                        პენიცილინები იყოფა 3 ჯგუფად:
-                    </p>
+          <section class="sub-section" id="penicilin">
+            <h4 class="sub-section__title">პენიცილინები</h4>
+            <p class="paragraph">პენიცილინები იყოფა 3 ჯგუფად:</p>
 
-                    <p class="paragraph">
-                        I. ვიწრო სპექტრის პენიცილინები &mdash; <strong>პენიცილინი G</strong> &mdash; მოქმედებს გრამ+, გრამ&ndash; კოკებზე და არა-ბეტა-ლაქტამაზას მაპროდუცირებელ ანაერობებზე.
-                    </p>
+            <p class="paragraph">
+              I. ვიწრო სპექტრის პენიცილინები &mdash;
+              <strong>პენიცილინი G</strong> &mdash; მოქმედებს გრამ+, გრამ&ndash;
+              კოკებზე და არა-ბეტა-ლაქტამაზას მაპროდუცირებელ ანაერობებზე.
+            </p>
 
-                    <p class="paragraph">
-                        II. ანტი-სტაფილოკოკური პენიცილინები &mdash; <strong>ნაფცილინი</strong> &mdash; მოქმედებენ სტაფილოკოკებზე და სტრეპტოკოკებზე.
-                    </p>
+            <p class="paragraph">
+              II. ანტი-სტაფილოკოკური პენიცილინები &mdash;
+              <strong>ნაფცილინი</strong> &mdash; მოქმედებენ სტაფილოკოკებზე და
+              სტრეპტოკოკებზე.
+            </p>
 
-                    <p class="paragraph">
-                        III. გაფართოებული სპექტრის პენიცილინები &mdash; <strong>ამპიცილინი</strong>, <strong>ამოქსაცილინი</strong> &mdash; მოქმედებენ როგორც გრამ+ ისე გრამ&ndash; მიკრობებზე. მოქმედების მექანიზმი &mdash; ხელს უშლიან ბაქტერიული კედლის სინთეზს.
-                    </p>
+            <p class="paragraph">
+              III. გაფართოებული სპექტრის პენიცილინები &mdash;
+              <strong>ამპიცილინი</strong>, <strong>ამოქსაცილინი</strong> &mdash;
+              მოქმედებენ როგორც გრამ+ ისე გრამ&ndash; მიკრობებზე. მოქმედების
+              მექანიზმი &mdash; ხელს უშლიან ბაქტერიული კედლის სინთეზს.
+            </p>
 
-                    <ul class="list mt-md">
-                        <h4 class="list__title">არასასურველი რეაქციები</h4>
-                        <li class="list__item">ანაფილაქსიური შოკი</li>
-                        <li class="list__item">ურტიკარია</li>
-                        <li class="list__item">ცხელება</li>
-                        <li class="list__item">სახსრების შესიება</li>
-                        <li class="list__item">ინტერსტიციული ნეფრიტი</li>
-                        <li class="list__item">ჰემატოლოგიური დარღვევები</li>
-                        <li class="list__item">კრუნჩხვები თირკმელების უკმარისობის მქონე პაციენტებში</li>
-                        <li class="list__item">კუჭ-ნაწლავის დისტრესი მაღალი დოზების დროს</li>
-                    </ul>
-                </section>
+            <ul class="list mt-md">
+              <h4 class="list__title">არასასურველი რეაქციები</h4>
+              <li class="list__item">ანაფილაქსიური შოკი</li>
+              <li class="list__item">ურტიკარია</li>
+              <li class="list__item">ცხელება</li>
+              <li class="list__item">სახსრების შესიება</li>
+              <li class="list__item">ინტერსტიციული ნეფრიტი</li>
+              <li class="list__item">ჰემატოლოგიური დარღვევები</li>
+              <li class="list__item">
+                კრუნჩხვები თირკმელების უკმარისობის მქონე პაციენტებში
+              </li>
+              <li class="list__item">
+                კუჭ-ნაწლავის დისტრესი მაღალი დოზების დროს
+              </li>
+            </ul>
+          </section>
 
-                <section class="sub-section" id="cephalosporin">
-                    <h4 class="sub-section__title">ცეფალოსპორინები</h4>
-                    <p class="paragraph">
-                        ცეფალოსპორინების 4 თაობა გვაქვს:
-                    </p>
+          <section class="sub-section" id="cephalosporin">
+            <h4 class="sub-section__title">ცეფალოსპორინები</h4>
+            <p class="paragraph">ცეფალოსპორინების 4 თაობა გვაქვს:</p>
 
-                    <p class="paragraph">
-                        I თაობა: <strong>ცეფადროქსილი</strong>, <strong>ცეფაზოლინი</strong>. მოქმედებენ: პნევმოკოკებზე, სტაფილოკოკებზე, სტრეპტოკოკებზე, E. Coli-ზე, პროტეუსზე.
-                    </p>
+            <p class="paragraph">
+              I თაობა: <strong>ცეფადროქსილი</strong>,
+              <strong>ცეფაზოლინი</strong>. მოქმედებენ: პნევმოკოკებზე,
+              სტაფილოკოკებზე, სტრეპტოკოკებზე, E. Coli-ზე, პროტეუსზე.
+            </p>
 
-                    <p class="paragraph">
-                        გამოიყენებიან საშარდე გზების ინფექციების სამკურნალოდ.
-                    </p>
+            <p class="paragraph">
+              გამოიყენებიან საშარდე გზების ინფექციების სამკურნალოდ.
+            </p>
 
-                    <p class="paragraph">
-                        არ გამოიყენებიან მენინგიტის სამკურნალოდ, რადგან ვერ გადიან ჰემატო-ენცეფალურ ბარიერს.
-                    </p>
+            <p class="paragraph">
+              არ გამოიყენებიან მენინგიტის სამკურნალოდ, რადგან ვერ გადიან
+              ჰემატო-ენცეფალურ ბარიერს.
+            </p>
 
-                    <p class="paragraph">
-                        II თაობა: <strong>ცეფაკლორი</strong>. მოქმედებენ ანაერობებზე, გრამ+ და გრამ&ndash; ბაქტერიებზე, კლებსიელაზე.
-                    </p>
+            <p class="paragraph">
+              II თაობა: <strong>ცეფაკლორი</strong>. მოქმედებენ ანაერობებზე,
+              გრამ+ და გრამ&ndash; ბაქტერიებზე, კლებსიელაზე.
+            </p>
 
-                    <p class="paragraph">
-                        გამოყენება: სინუსიტები, ოტიტი, ქვედა სასუნთქი გზების ინფექცია, პერიტონიტი, დივერტიკულიტი.
-                    </p>
+            <p class="paragraph">
+              გამოყენება: სინუსიტები, ოტიტი, ქვედა სასუნთქი გზების ინფექცია,
+              პერიტონიტი, დივერტიკულიტი.
+            </p>
 
-                    <p class="paragraph">
-                        III თაობა: <strong>ცეფტრიაქსონი</strong>. მოქმედებენ გრამ+, უფრო ფართო სპექტრის გრამ&ndash; ბაქტერიებზე. ზოგიერთი მათგანი გადის ჰემატო-ენცეფალურ ბარიერს, ამიტომ გამოიყენებიან მენინგიტების სამკურნალოდ. ასევე სეფსისის ემპირიული მკურნალობისას.
-                    </p>
+            <p class="paragraph">
+              III თაობა: <strong>ცეფტრიაქსონი</strong>. მოქმედებენ გრამ+, უფრო
+              ფართო სპექტრის გრამ&ndash; ბაქტერიებზე. ზოგიერთი მათგანი გადის
+              ჰემატო-ენცეფალურ ბარიერს, ამიტომ გამოიყენებიან მენინგიტების
+              სამკურნალოდ. ასევე სეფსისის ემპირიული მკურნალობისას.
+            </p>
 
-                    <p class="paragraph">
-                        IV თაობა: <strong>ცეფეპიმი</strong>. აქვს ყველაზე ფართო სპექტრი. კარგად გადის ცერებრო-სპინალურ სითხეში.
-                    </p>
+            <p class="paragraph">
+              IV თაობა: <strong>ცეფეპიმი</strong>. აქვს ყველაზე ფართო სპექტრი.
+              კარგად გადის ცერებრო-სპინალურ სითხეში.
+            </p>
 
-                    <ul class="list mt-sm">
-                        <h4 class="list__title">არასასურველი რეაქციები</h4>
-                        <li class="list__item">ალერგია</li>
-                        <li class="list__item">ინტრავენურმა ინექციებმა შეიძლება გამოიწვიოს თრომბოფლებიტი</li>
-                        <li class="list__item">ცეფალორიდინი არის ნეფროტოქსიკური (დისულფირამის მსგავსი მწვავე რეაქცია)</li>
-                    </ul>
-                </section>
+            <ul class="list mt-sm">
+              <h4 class="list__title">არასასურველი რეაქციები</h4>
+              <li class="list__item">ალერგია</li>
+              <li class="list__item">
+                ინტრავენურმა ინექციებმა შეიძლება გამოიწვიოს თრომბოფლებიტი
+              </li>
+              <li class="list__item">
+                ცეფალორიდინი არის ნეფროტოქსიკური (დისულფირამის მსგავსი მწვავე
+                რეაქცია)
+              </li>
+            </ul>
+          </section>
 
-                <section class="sub-section" id="monobactam">
-                    <h4 class="sub-section__title">მონობაქტამი</h4>
+          <section class="sub-section" id="monobactam">
+            <h4 class="sub-section__title">მონობაქტამი</h4>
 
-                    <p class="paragraph">
-                        <strong>აზტრეონამი</strong> &mdash; მოქმედებენ გრამ&ndash; ბაქტერიებზე.
-                    </p>
-                </section>
+            <p class="paragraph">
+              <strong>აზტრეონამი</strong> &mdash; მოქმედებენ გრამ&ndash;
+              ბაქტერიებზე.
+            </p>
+          </section>
 
-                <section class="sub-section" id="carbapenem">
-                    <h4 class="sub-section__title">კარბაპენემები</h4>
+          <section class="sub-section" id="carbapenem">
+            <h4 class="sub-section__title">კარბაპენემები</h4>
 
-                    <p class="paragraph">
-                        ენტერობაქტერიული ინფექციების სამკურნალო არჩევის პრეპარატები.
-                    </p>
+            <p class="paragraph">
+              ენტერობაქტერიული ინფექციების სამკურნალო არჩევის პრეპარატები.
+            </p>
 
-                    <ul class="list mt-sm">
-                        <h4 class="list__title">ყველაზე ხშირი არასასურველი ეფექტები</h4>
-                        <li class="list__item">გულისრევა</li>
-                        <li class="list__item">ღებინება</li>
-                        <li class="list__item">ფაღარათი</li>
-                        <li class="list__item">კრუნჩხვა &mdash; თირკმლის უკმარისობის დროს</li>
-                    </ul>
-                </section>
+            <ul class="list mt-sm">
+              <h4 class="list__title">ყველაზე ხშირი არასასურველი ეფექტები</h4>
+              <li class="list__item">გულისრევა</li>
+              <li class="list__item">ღებინება</li>
+              <li class="list__item">ფაღარათი</li>
+              <li class="list__item">
+                კრუნჩხვა &mdash; თირკმლის უკმარისობის დროს
+              </li>
+            </ul>
+          </section>
 
-                <section class="sub-section" id="beta-lactamase-inhibitors">
-                    <h4 class="sub-section__title">ბეტა-ლაქტამაზას ინჰიბიტორები</h4>
+          <section class="sub-section" id="beta-lactamase-inhibitors">
+            <h4 class="sub-section__title">ბეტა-ლაქტამაზას ინჰიბიტორები</h4>
 
-                    <ul class="list mt-sm">
-                        <li class="list__item">კლავულანის მჟავა</li>
-                        <li class="list__item">სულბაქტამი</li>
-                        <li class="list__item">ტაზობაქტამი</li>
-                    </ul>
+            <ul class="list mt-sm">
+              <li class="list__item">კლავულანის მჟავა</li>
+              <li class="list__item">სულბაქტამი</li>
+              <li class="list__item">ტაზობაქტამი</li>
+            </ul>
 
-                    <p class="paragraph">
-                        ისინი აფართეობენ პენიცილინების სპექტრს.
-                    </p>
-                </section>
+            <p class="paragraph">ისინი აფართეობენ პენიცილინების სპექტრს.</p>
+          </section>
 
-                <section class="sub-section">
-                    <h4 class="sub-section__title">სხვა საშუალებები</h4>
+          <section class="sub-section">
+            <h4 class="sub-section__title">სხვა საშუალებები</h4>
 
-                    <p class="paragraph">
-                        <strong>ვანკომიცინი</strong> &mdash; არის უჯრედის კედლის სინთეზის ინჰიბიტორი. მოქმედებს გრამ+ ბაქტერიებზე და მხოლოდ გამრავლების პერიოდში მყოფ მიკროორგანიზმებზე. ჩვენება &mdash; მეთიცილინ-რეზისტენტული სტაფილოკოკებით განპირობებული ენდოკარდიტი ან სეფსისი. ახასიათებს &bdquo;წითელი კაცის სინდრომი&rdquo; &mdash; ჰისტამინის გამო.
-                    </p>
-                </section>
-            </section>
+            <p class="paragraph">
+              <strong>ვანკომიცინი</strong> &mdash; არის უჯრედის კედლის სინთეზის
+              ინჰიბიტორი. მოქმედებს გრამ+ ბაქტერიებზე და მხოლოდ გამრავლების
+              პერიოდში მყოფ მიკროორგანიზმებზე. ჩვენება &mdash;
+              მეთიცილინ-რეზისტენტული სტაფილოკოკებით განპირობებული ენდოკარდიტი ან
+              სეფსისი. ახასიათებს &bdquo;წითელი კაცის სინდრომი&rdquo; &mdash;
+              ჰისტამინის გამო.
+            </p>
+          </section>
+        </section>
 
-            <hr class="section-divider">
+        <hr class="section-divider" />
 
-            <section id="tetracycline" class="section">
-                <h3 class="article__sub-title">ტეტრაციკლინები</h3>
+        <section id="tetracycline" class="section">
+          <h3 class="article__sub-title">ტეტრაციკლინები</h3>
 
-                <p class="paragraph">
-                    ტეტრაციკლინები არიან ბაქტერიოციდული მოქმედების პრეპარატები. ისინი თრგუნავენ ცილის სინთეზს და აინჰიბირებენ რიბოსომებს.
-                </p>
+          <p class="paragraph">
+            ტეტრაციკლინები არიან ბაქტერიოციდული მოქმედების პრეპარატები. ისინი
+            თრგუნავენ ცილის სინთეზს და აინჰიბირებენ რიბოსომებს.
+          </p>
 
-                <p class="paragraph">
-                    გამოიყენებიან: ქლამიდიით, რიკეტსიით და ზოგიერთი სპიროქეტით გამოწვეული ინფექციების, პნევმონიის მიკოპლაზმით, H. Pylori-თ გამოწვეული წყლულის სამკურნალოდ. ასევე აკნეს, საზოგადოებაში გავრცელებული პნევმონიის და ლაიმის დაავადების სამკურნალოდ.
-                </p>
+          <p class="paragraph">
+            გამოიყენებიან: ქლამიდიით, რიკეტსიით და ზოგიერთი სპიროქეტით
+            გამოწვეული ინფექციების, პნევმონიის მიკოპლაზმით, H. Pylori-თ
+            გამოწვეული წყლულის სამკურნალოდ. ასევე აკნეს, საზოგადოებაში
+            გავრცელებული პნევმონიის და ლაიმის დაავადების სამკურნალოდ.
+          </p>
 
-                <ul class="list mt-sm">
-                    <h4 class="list__title">არასასურველი რეაქციები</h4>
-                    <li class="list__item">გულისრევა</li>
-                    <li class="list__item">ღებინება</li>
-                    <li class="list__item">ფაღარათი</li>
-                    <li class="list__item">მოქმედებენ ძვალზე და უკავშირდებიან Ca-ს</li>
-                    <li class="list__item">შეიძლება გამოიწვიონ ნეფროტოქსიკურობა და ჰეპატოტოქსიკურობა</li>
-                    <li class="list__item">ფოტოსენსიბილიზაცია</li>
-                    <li class="list__item">თავბრუსხვევა</li>
-                </ul>
-            </section>
+          <ul class="list mt-sm">
+            <h4 class="list__title">არასასურველი რეაქციები</h4>
+            <li class="list__item">გულისრევა</li>
+            <li class="list__item">ღებინება</li>
+            <li class="list__item">ფაღარათი</li>
+            <li class="list__item">მოქმედებენ ძვალზე და უკავშირდებიან Ca-ს</li>
+            <li class="list__item">
+              შეიძლება გამოიწვიონ ნეფროტოქსიკურობა და ჰეპატოტოქსიკურობა
+            </li>
+            <li class="list__item">ფოტოსენსიბილიზაცია</li>
+            <li class="list__item">თავბრუსხვევა</li>
+          </ul>
+        </section>
 
-            <hr class="section-divider">
+        <hr class="section-divider" />
 
-            <section id="macrolides" class="section">
-                <h3 class="article__sub-title">მაკროლიდები</h3>
+        <section id="macrolides" class="section">
+          <h3 class="article__sub-title">მაკროლიდები</h3>
 
-                <p class="paragraph">
-                    მაკროლიდები გამოიყენებიან დიფტერიის სამკურნალოდ.
-                </p>
+          <p class="paragraph">
+            მაკროლიდები გამოიყენებიან დიფტერიის სამკურნალოდ.
+          </p>
 
-                <p class="paragraph">
-                    <strong>ერითრომიცინი</strong> &mdash; თრგუნავს ცილის სინთეზს. მოქმედებს ასევე პნევმოკოკზე, სტრეპტოკოკებზე, სტაფილოკოკებზე და კორინებაქტერიებზე. შეიძლება გამოიწვიოს მწვავე ქოლესტაზური ჰეპატიტი.
-                </p>
-            </section>
+          <p class="paragraph">
+            <strong>ერითრომიცინი</strong> &mdash; თრგუნავს ცილის სინთეზს.
+            მოქმედებს ასევე პნევმოკოკზე, სტრეპტოკოკებზე, სტაფილოკოკებზე და
+            კორინებაქტერიებზე. შეიძლება გამოიწვიოს მწვავე ქოლესტაზური ჰეპატიტი.
+          </p>
+        </section>
 
-            <hr class="section-divider">
+        <hr class="section-divider" />
 
-            <section id="sulfonamides" class="section">
-                <h3 class="article__sub-title">სულფონამიდები</h3>
+        <section id="sulfonamides" class="section">
+          <h3 class="article__sub-title">სულფონამიდები</h3>
 
-                <p class="paragraph">
-                    აინჰიბირებენ ფოლიუმის მჟავას წარმოქმნას. მოქმედებენ გრამ+, გრამ&ndash;, ქლამიდიაზე, ნოკარდიაზე.
-                </p>
+          <p class="paragraph">
+            აინჰიბირებენ ფოლიუმის მჟავას წარმოქმნას. მოქმედებენ გრამ+,
+            გრამ&ndash;, ქლამიდიაზე, ნოკარდიაზე.
+          </p>
 
-                <ul class="list mt-sm">
-                    <h4 class="list__title">არასასურველი რეაქციები</h4>
-                    <li class="list__item">ალერგიული რეაქციები</li>
-                    <li class="list__item">ცხელება</li>
-                    <li class="list__item">სტივენ-ჯონსონის სინდრომი</li>
-                </ul>
-            </section>
-
-        </article>
+          <ul class="list mt-sm">
+            <h4 class="list__title">არასასურველი რეაქციები</h4>
+            <li class="list__item">ალერგიული რეაქციები</li>
+            <li class="list__item">ცხელება</li>
+            <li class="list__item">სტივენ-ჯონსონის სინდრომი</li>
+          </ul>
+        </section>
+      </article>
     </main>
 
     <a href="#body" id="scroll-to-top" class="scroll-top scroll">&uarr;</a>
 
     <footer class="footer">
-        <div class="copyright">&copy; 2018</div>
+      <div class="copyright">&copy; 2018</div>
     </footer>
 
-
     <script src="dist/js/index.min.js"></script>
-</body>
+  </body>
 </html>
