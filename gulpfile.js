@@ -38,8 +38,8 @@ const imgURL = './dist/images/';
 const fontsSRC = './src/fonts/**/*';
 const fontsURL = './dist/fonts/';
 
-const htmlSRC = './**/*.html';
-const htmlURL = './dist/';
+// const htmlSRC = './**/*.html';
+// const htmlURL = './dist/';
 
 const styleWatch = './src/sass/**/*.sass';
 const jsWatch = './src/js/**/*.js';
@@ -128,9 +128,9 @@ function triggerPlumber(src_file, dest_file) {
   return src(src_file).pipe(plumber()).pipe(dest(dest_file));
 }
 
-function html() {
-  return triggerPlumber(htmlSRC, htmlURL);
-}
+// function html() {
+//   return triggerPlumber(htmlSRC, htmlURL);
+// }
 
 function buildDocs() {
   return triggerPlumber('./dist/**/*.*', './docs/');
@@ -141,7 +141,7 @@ function watch_files() {
   watch(imgWatch, series(cleanImages, reload));
   watch(imgWatch, series(minifyImages, reload));
   watch(jsWatch, series(compileJs, reload));
-  watch(htmlWatch, series(html, reload));
+  watch(htmlWatch, reload);
   watch(fontsWatch, series(copyFonts, reload));
 }
 
@@ -149,11 +149,11 @@ task('css', compileScss);
 task('cleanImages', cleanImages);
 task('js', compileJs);
 task('images', minifyImages);
-task('html', html);
+// task('html', html);
 task('fonts', copyFonts);
 task('build', buildDocs);
 task(
   'default',
-  parallel(compileScss, compileJs, cleanImages, minifyImages, copyFonts, html)
+  parallel(compileScss, compileJs, cleanImages, minifyImages, copyFonts)
 );
 task('watch', parallel(browser_sync, watch_files));
