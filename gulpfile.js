@@ -38,7 +38,7 @@ const imgURL = './dist/images/';
 const fontsSRC = './src/fonts/**/*';
 const fontsURL = './dist/fonts/';
 
-// const htmlSRC = './**/*.html';
+const htmlSRC = './**/*.html';
 // const htmlURL = './dist/';
 
 const styleWatch = './src/sass/**/*.sass';
